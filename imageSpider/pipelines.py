@@ -15,5 +15,5 @@ class ImagespiderPipeline(ImagesPipeline):
     
     def file_path(self, request, response=None, info=None):
         path = super().file_path(request, response=response, info=info)
-        path = path.replace("full", response.meta['title'])
+        path = path.replace("full", request.meta['title'])
         return path

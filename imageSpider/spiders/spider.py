@@ -7,7 +7,7 @@ class spider(scrapy.Spider):
 
     def start_requests(self):
         for i in range(1, 50):
-            yield scrapy.Request(f"http://www.bizhi88.com/c1/{1}.html", meta={"title": "美女壁纸"})
+            yield scrapy.Request(f"http://www.bizhi88.com/c1/{i}.html", meta={"title": "美女壁纸"})
     
     # parse回调函数
     def parse(self, response):
