@@ -11,6 +11,7 @@
 ```
 git clone https://github.com/Maaaaaaaa12138/imageSpider.git
 cd imageSpider
+pip install -r requirements.txt
 scrapy crawl imageSp1
 ```
 
